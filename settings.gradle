@@ -1,1 +1,1 @@
-include ':sample', ':library', ':floatingedittext'
+include ':sample', ':widgets', ':floatingedittext'
