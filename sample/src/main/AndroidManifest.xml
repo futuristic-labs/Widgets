@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.manusunny.android.widgets">
+    package="com.manusunny.widgetsample">
 
     <application
         android:allowBackup="true"

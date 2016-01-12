@@ -1,15 +1,18 @@
 apply plugin: 'com.android.application'
 
+Properties properties = new Properties()
+properties.load(project.rootProject.file('local.properties').newDataInputStream())
+
 android {
     compileSdkVersion 23
     buildToolsVersion "23.0.2"
 
     defaultConfig {
-        applicationId "com.manusunny.android.widgets"
+        applicationId "com.manusunny.widgetsample"
         minSdkVersion 10
         targetSdkVersion 23
-        versionCode 1
-        versionName "1.0"
+        versionCode properties.getProperty("versionNumber").toInteger()
+        versionName properties.getProperty("version")
     }
     buildTypes {
         release {
