@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Material Widgets</string>
+    <string name="title_activity_main">Material Widgets</string>
 </resources>

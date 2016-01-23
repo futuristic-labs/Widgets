@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="hint_color">#ffc8c8c8</color>
+    <color name="highlighted_color">#ff3f51b5</color>
+    <color name="error_color">#DB4437</color>
+    <dimen name="underline_height">1dp</dimen>
+    <dimen name="underline_highlighted_height">2dp</dimen>
+
+</resources>

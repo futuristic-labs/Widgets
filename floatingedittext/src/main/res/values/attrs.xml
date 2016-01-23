@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="FloatingEditText">
+        <attr name="hint_scale" format="float" />
+        <attr name="hint_color" format="color" />
+        <attr name="highlighted_color" format="color" />
+        <attr name="error_color" format="color" />
+        <attr name="underline_height" format="dimension" />
+        <attr name="underline_highlighted_height" format="dimension" />
+    </declare-styleable>
+</resources>
