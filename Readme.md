@@ -10,7 +10,7 @@ Android Material Design widgets for Android 9+
 Soon to be uploaded to Maven
 
 #### Usage
-```
+```java
 <com.manusunny.android.FloatingEditText
         android:id="@+id/floatingEditText"
         android:layout_width="match_parent"
@@ -27,14 +27,14 @@ Soon to be uploaded to Maven
 
 To set error indication:
 
-```
+```java
 FloatingEditText editText = (FloatingEditText) findViewById(R.id.floatingEditText);
 editText.setValidationResult(false, "Invalid Input");
 ```
 
 Other available methods : 
 
-```
+```java
 editText.setHighlightedColor(highlightedColor);
 editText.setNormalColor(normalColor);
 editText.setErrorColor(errorColor);
@@ -52,8 +52,8 @@ Example:
         <item name="highlighted_color">@color/colorAccent</item>
         <item name="error_color">#FFFFFF</item>
         
-        <item name="underline_height">8dp</item>
-        <item name="underline_highlighted_height">200dp</item>
+        <item name="underline_height">1dp</item>
+        <item name="underline_highlighted_height">2dp</item>
     </style>
 </resources>
 ```
