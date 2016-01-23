@@ -10,7 +10,6 @@ import android.graphics.PixelFormat;
 import android.graphics.Rect;
 import android.graphics.drawable.Drawable;
 import android.os.Build;
-import android.support.annotation.NonNull;
 import android.text.TextUtils;
 import android.util.AttributeSet;
 import android.widget.EditText;
@@ -58,15 +57,15 @@ public class FloatingEditText extends EditText {
         mHintScale = attributes.getFloat(R.styleable.FloatingEditText_hint_scale,
                 HINT_SCALE);
         mColor = attributes.getColor(R.styleable.FloatingEditText_hint_color,
-                getResources().getColor(R.color.floating_edit_text_color));
+                getResources().getColor(R.color.hint_color));
         mHighlightedColor = attributes.getColor(R.styleable.FloatingEditText_highlighted_color,
-                getResources().getColor(R.color.floating_edit_text_highlighted_color));
+                getResources().getColor(R.color.highlighted_color));
         mErrorColor = attributes.getColor(R.styleable.FloatingEditText_error_color,
-                getResources().getColor(R.color.floating_edit_text_error_color));
+                getResources().getColor(R.color.error_color));
         mUnderlineHeight = attributes.getDimensionPixelSize(R.styleable.FloatingEditText_underline_height,
-                getResources().getDimensionPixelSize(R.dimen.floating_edit_text_underline_height));
+                getResources().getDimensionPixelSize(R.dimen.underline_height));
         mUnderlineHighlightedHeight = attributes.getDimensionPixelSize(R.styleable.FloatingEditText_underline_highlighted_height,
-                getResources().getDimensionPixelSize(R.dimen.floating_edit_text_underline_highlighted_height));
+                getResources().getDimensionPixelSize(R.dimen.underline_highlighted_height));
         setHintTextColor(Color.TRANSPARENT);
         mTextEmpty = TextUtils.isEmpty(getText());
         mHintPaint = new Paint();
@@ -186,7 +185,7 @@ public class FloatingEditText extends EditText {
     }
 
     @Override
-    protected void onDraw(@NonNull Canvas canvas) {
+    protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
         if (!TextUtils.isEmpty(getHint())) {
             mHintPaint.set(getPaint());
