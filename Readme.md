@@ -24,6 +24,21 @@ Soon to be uploaded to Maven
         app:underline_height="1dp"
         app:underline_highlighted_height="2dp"/>
 ```
+
+To set error indication:
+
+```
+FloatingEditText editText = (FloatingEditText) findViewById(R.id.floatingEditText);
+editText.setValidationResult(false, "Invalid Input");
+```
+
+Other available methods : 
+
+```
+editText.setHighlightedColor(highlightedColor);
+editText.setNormalColor(normalColor);
+editText.setErrorColor(errorColor);
+```
 #### Styling
 
 Give required styles in `res/values/styles.xml`
@@ -36,7 +51,7 @@ Example:
         <item name="hint_color">@color/colorPrimary</item>
         <item name="highlighted_color">@color/colorAccent</item>
         <item name="error_color">#FFFFFF</item>
-
+        
         <item name="underline_height">8dp</item>
         <item name="underline_highlighted_height">200dp</item>
     </style>
